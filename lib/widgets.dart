@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/rendering/box.dart';
 
@@ -15,9 +17,9 @@ child: Center(
         Row(
           children: [
         SizedBox(width: 18),
-            TextReusable(miTextoReusable: "Facturación", miStiloDeTextoReusable: TextStyle(fontSize: 10, fontWeight: FontWeight.bold), miColorReusableDelTexto: Colors.black),
-       SizedBox(width: 117,),
-            TextReusable(miTextoReusable: "Monto Inicial C\$", miStiloDeTextoReusable: TextStyle(fontSize: 10), miColorReusableDelTexto: Colors.black),
+            TextReusable(miTextoReusable: "Facturación", miStiloDeTextoReusable: TextStyle(fontSize: 10, fontWeight: FontWeight.bold), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+       SizedBox(width: 276,),
+            TextReusable(miTextoReusable: "Monto Inicial C\$", miStiloDeTextoReusable: TextStyle(fontSize: 10), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
           ],
         ),
         SizedBox(width: 6,),
@@ -38,166 +40,234 @@ child: Center(
         ),
       ],
     ),
+    SizedBox(width: 13),
 TextFieldReutilizable(misegundotextoreutilizable: "Search"),
+
+SizedBox(width: 25),
 Row(
   children: [
          SizedBox(width: 25,),
-     TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 22), miColorReusableDelTexto: Colors.black),
+     TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 22), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
      SizedBox(width: 100,),
-    TextReusable(miTextoReusable: "N de Registro Inicial", miStiloDeTextoReusable: TextStyle(fontSize: 22), miColorReusableDelTexto: Colors.black),
+    TextReusable(miTextoReusable: "N de Registro Inicial", miStiloDeTextoReusable: TextStyle(fontSize: 22), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
          SizedBox(width: 12,),
     TextFieldReutilizable(misegundotextoreutilizable: ""),
          SizedBox(width: 12,),
-    TextReusable(miTextoReusable: "Moneda", miStiloDeTextoReusable: TextStyle(fontSize: 22), miColorReusableDelTexto: Colors.black),
+    TextReusable(miTextoReusable: "Moneda", miStiloDeTextoReusable: TextStyle(fontSize: 22), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
          SizedBox(width: 61,),
-    TextReusable(miTextoReusable: "Total", miStiloDeTextoReusable: TextStyle(fontSize: 22), miColorReusableDelTexto: Colors.black),
+    TextReusable(miTextoReusable: "Total", miStiloDeTextoReusable: TextStyle(fontSize: 22), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
   ],
   
 ),
 
+
 Row(
   children: [
         SizedBox(width:23),
-        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
+        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
         SizedBox(width:400),
-    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
+    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
     SizedBox(width:190),
-    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
+    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
     SizedBox(width:92),
-    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
+    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
   ],
 ),
-Divider(
-  color: Colors.black,
+Container(
+  width: 1147,
+  child:   Divider(
+    color: Colors.black,
+  ),
 ),
 Row(
   children: [
         SizedBox(width:23),
-        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
+        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
         SizedBox(width:400),
-    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
+    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
     SizedBox(width:190),
-    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
+    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
     SizedBox(width:92),
-    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
+    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
   ],
 ),
-SizedBox(height: 26),
-Row(
-  children: [
-        SizedBox(width:23),
-        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-        SizedBox(width:400),
-    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:190),
-    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:92),
-    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-  ],
-),
-SizedBox(height: 26),
-Row(
-  children: [
-        SizedBox(width:23),
-        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-        SizedBox(width:400),
-    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:190),
-    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:92),
-    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-  ],
-),
-SizedBox(height: 26),
-Row(
-  children: [
-        SizedBox(width:23),
-        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-        SizedBox(width:400),
-    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:190),
-    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:92),
-    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-  ],
-),
-SizedBox(height: 26),
-Row(
-  children: [
-        SizedBox(width:23),
-        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-        SizedBox(width:400),
-    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:190),
-    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:92),
-    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-  ],
-),
-SizedBox(height: 26),
-Row(
-  children: [
-        SizedBox(width:23),
-        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-        SizedBox(width:400),
-    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:190),
-    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:92),
-    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-  ],
-),
-SizedBox(height: 26),
-Row(
-  children: [
-        SizedBox(width:23),
-        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-        SizedBox(width:400),
-    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:190),
-    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:92),
-    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-  ],
-),
-SizedBox(height: 26),
-Row(
-  children: [
-        SizedBox(width:23),
-        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-        SizedBox(width:400),
-    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:190),
-    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:92),
-    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-  ],
-),
-SizedBox(height: 26),
-Row(
-  children: [
-        SizedBox(width:23),
-        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-        SizedBox(width:400),
-    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:190),
-    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-    SizedBox(width:92),
-    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
-  ],
+Container(
+  width: 1147,
+  child:   Divider(
+    color: Colors.black,
+  ),
 ),
 
 Row(
   children: [
         SizedBox(width:23),
-        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
+        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
         SizedBox(width:400),
-    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
+    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
     SizedBox(width:190),
-    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
+    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
     SizedBox(width:92),
-    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black),
+    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
   ],
+),
+Container(
+  width: 1147,
+  child:   Divider(
+    color: Colors.black,
+  ),
+),
+
+Row(
+  children: [
+        SizedBox(width:23),
+        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+        SizedBox(width:400),
+    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:190),
+    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:92),
+    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+  ],
+),
+Container(
+  width: 1147,
+  child:   Divider(
+    color: Colors.black,
+  ),
+),
+
+Row(
+  children: [
+        SizedBox(width:23),
+        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+        SizedBox(width:400),
+    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:190),
+    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:92),
+    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+  ],
+),
+Container(
+  width: 1147,
+  child:   Divider(
+    color: Colors.black,
+  ),
+),
+
+Row(
+  children: [
+        SizedBox(width:23),
+        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+        SizedBox(width:400),
+    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:190),
+    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:92),
+    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+  ],
+),
+Container(
+  width: 1147,
+  child:   Divider(
+    color: Colors.black,
+  ),
+),
+
+Row(
+  children: [
+        SizedBox(width:23),
+        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+        SizedBox(width:400),
+    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:190),
+    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:92),
+    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+  ],
+),
+Container(
+  width: 1147,
+  child:   Divider(
+    color: Colors.black,
+  ),
+),
+
+Row(
+  children: [
+        SizedBox(width:23),
+        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+        SizedBox(width:400),
+    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:190),
+    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:92),
+    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+  ],
+),
+Container(
+  width: 1147,
+  child:   Divider(
+    color: Colors.black,
+  ),
+),
+
+Row(
+  children: [
+        SizedBox(width:23),
+        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+        SizedBox(width:400),
+    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:190),
+    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:92),
+    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+  ],
+),
+Container(
+  width: 1147,
+  child:   Divider(
+    color: Colors.black,
+  ),
+),
+
+Row(
+  children: [
+        SizedBox(width:23),
+        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+        SizedBox(width:400),
+    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16, fontWeight: FontWeight.bold), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:190),
+    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:92),
+    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+  ],
+),
+Container(
+  width: 1147,
+  child:   Divider(
+    color: Colors.black,
+  ),
+),
+
+Row(
+  children: [
+        SizedBox(width:23),
+        TextReusable(miTextoReusable: "Clientes o Productos", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+        SizedBox(width:400),
+    TextReusable(miTextoReusable: "00000", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:190),
+    TextReusable(miTextoReusable: "C\$", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+    SizedBox(width:92),
+    TextReusable(miTextoReusable: "00.0", miStiloDeTextoReusable: TextStyle(fontSize: 16), miColorReusableDelTexto: Colors.black, mistilo: FontWeight.bold,),
+  ],
+),
+
+Container(
+  width: 1147,
+  child:   Divider(
+    color: Colors.black,
+  ),
 ),
 
   ],
@@ -211,18 +281,24 @@ class TextReusable extends StatelessWidget {
       {Key? key,
       required this.miTextoReusable,
       required this.miStiloDeTextoReusable,
-      required this.miColorReusableDelTexto})
+      required this.miColorReusableDelTexto,
+      required this.mistilo,
+      // required this.mitam,
+      })
       : super(key: key);
 
   final String miTextoReusable;
   final TextStyle miStiloDeTextoReusable;
   final Color miColorReusableDelTexto;
+  final FontWeight mistilo;
+  // final Size mitam;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      // width: 130,
       child: Text(miTextoReusable,
-          style: TextStyle(fontSize: 25, color: miColorReusableDelTexto)),
+          style: TextStyle(color: miColorReusableDelTexto, fontWeight: mistilo)),
     );
   }
 }
@@ -258,16 +334,6 @@ double size;
         borderRadius: BorderRadius.circular(22),
         
       ),
-      // children: [
-      //   RaisedButton(onPressed: (){}, 
-      //   child: Text(miprimerTextoReusable),
-      //  color: ColorReusable,
-     
-    
-    
-      
-        //),
-     // ],
     );
   }
 }
